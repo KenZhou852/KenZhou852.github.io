@@ -2,7 +2,7 @@
 This timer app is used to determine approximately when the Verus Hilla Reap Mechanic occurs.
 Use the time given as a guide as Verus Hilla's reap mechanic may be off by a few seconds
 
-#How to use
+# How to use
 Ideally, you want the timer at the top to match the timer of your run.
 VHilla generally has 3 phases for the time it takes the reap mechanic to occur.
 These phases can be approximated based on the amount of health she has.
