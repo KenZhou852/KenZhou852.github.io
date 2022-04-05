@@ -1,4 +1,6 @@
-# vhilla-timer
+https://KenZhou852.github.io/vhilla-timer
+
+# VHilla-Timer
 This timer app is used to determine approximately when the Verus Hilla Reap Mechanic occurs.
 Use the time given as a guide as Verus Hilla's reap mechanic may be off by a few seconds
 
