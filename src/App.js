@@ -3,6 +3,13 @@ import { Time } from "./Time.js";
 import "./App.css";
 import { FMAPrediction } from "./FMAPrediction.js";
 
+function Pause(props) {
+  if (props.isPaused) {
+    return <p id="pause-indicator">Paused</p>;
+  }
+  return <div />;
+}
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -61,7 +68,8 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <Time time={this.state.timer} />
+          <Time time={this.state.timer} id="timer" />
+          <Pause isPaused={this.state.paused} />
         </header>
         <div className="App-body">
           <div className="Phase">

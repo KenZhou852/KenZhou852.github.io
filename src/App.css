@@ -23,6 +23,7 @@ body {
   background-color: #282c34;
   min-height: 10rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -137,4 +138,9 @@ h3 {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+#pause-indicator {
+  position: absolute;
+  top: 5.5rem;
 }
