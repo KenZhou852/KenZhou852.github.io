@@ -1,38 +1,140 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  background-image: url("../public/vhilla-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  min-height: 100vh;
+  background: rgba(102, 139, 99, 0.3);
+  border-radius: 30px;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.App-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 1rem);
+}
+
+p {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+.Phase {
+  margin-top: 2rem;
+  justify-content: start;
+  width: 50%;
+}
+
+.Phase-button-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Phase-button {
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.Utility-button-list {
+  justify-content: space-evenly;
+}
+
+.Utility-button {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  border-radius: 10px;
+}
+
+.Prediction {
+  margin-top: 2rem;
+  color: white;
+}
+
+.flexbox-item {
+  margin: 1rem;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#Phase-color {
+  height: 40px;
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.Red {
+  background-color: rgb(230, 53, 53);
+}
+
+.Yellow {
+  background-color: rgb(192, 226, 97);
+}
+
+.Pink {
+  background-color: rgb(230, 157, 169);
+}
+
+.time-button-list {
+  width: 20%;
+}
+
+.time-input-box {
+  width: 30%;
+  margin: 0.5rem;
+}
+
+#FMA-button-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 3rem;
+}
+
+.change-time-button {
+  border-radius: 5px;
+  padding: 0.5rem 0.2rem;
+}
+
+#time-input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
