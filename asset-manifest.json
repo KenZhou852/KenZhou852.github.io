@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/vhilla-timer/static/css/main.47aa21ee.css",
+    "main.css": "/vhilla-timer/static/css/main.adff5d63.css",
     "main.js": "/vhilla-timer/static/js/main.daa392f2.js",
     "static/js/787.3fd773b4.chunk.js": "/vhilla-timer/static/js/787.3fd773b4.chunk.js",
     "static/media/vhilla-background.jpeg": "/vhilla-timer/static/media/vhilla-background.79a24aebb810153abab2.jpeg",
     "index.html": "/vhilla-timer/index.html",
-    "main.47aa21ee.css.map": "/vhilla-timer/static/css/main.47aa21ee.css.map",
+    "main.adff5d63.css.map": "/vhilla-timer/static/css/main.adff5d63.css.map",
     "main.daa392f2.js.map": "/vhilla-timer/static/js/main.daa392f2.js.map",
     "787.3fd773b4.chunk.js.map": "/vhilla-timer/static/js/787.3fd773b4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.47aa21ee.css",
+    "static/css/main.adff5d63.css",
     "static/js/main.daa392f2.js"
   ]
 }
