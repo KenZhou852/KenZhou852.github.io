@@ -4,8 +4,9 @@ body {
 }
 body {
   background-image: url("../public/vhilla-background.jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-repeat: repeat;
+  background-position: center;
 }
 
 .App {
