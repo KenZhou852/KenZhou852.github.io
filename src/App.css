@@ -123,6 +123,9 @@ h3 {
   margin: 0.5rem;
   min-width: 1rem;
 }
+.Prediction h2 {
+  color: white;
+}
 
 #FMA-button-list {
   display: flex;

@@ -2,6 +2,7 @@ import React, { useEffect, useState, Component } from "react";
 import { Time } from "./Time.js";
 import "./App.css";
 import { FMAPrediction } from "./FMAPrediction.js";
+import { ETA } from "./ETA.js";
 
 function Pause(props) {
   if (props.isPaused) {
@@ -157,6 +158,12 @@ class App extends React.Component {
             <FMAPrediction
               FMAPhase={this.state.phaseOnFMA}
               FMA={this.state.lastFMA}
+            />
+            <h2>ETA:</h2>
+            <ETA
+              time={this.state.timer - this.state.lastFMA}
+              phase={this.state.phaseOnFMA}
+              id="ETA"
             />
           </div>
         </div>

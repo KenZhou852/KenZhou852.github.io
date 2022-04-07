@@ -1,5 +1,15 @@
-export function Time(props) {
+export function ETA(props) {
   let timer = props.time;
+  let FMAPhase = props.phase;
+
+  if (FMAPhase == "Red") {
+    timer += 150;
+  } else if (FMAPhase == "Pink") {
+    timer += 125;
+  } else {
+    timer += 100;
+  }
+
   if (timer <= 0) {
     timer = 0;
   }
