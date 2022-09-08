@@ -34,7 +34,7 @@ class App extends React.Component {
   }
 
   tick() {
-    if (!this.state.paused) {
+    if (!this.state.paused && this.state.timer >= 0) {
       this.setState((state) => ({ ...state, timer: state.timer - 1 }));
     }
   }
@@ -87,7 +87,7 @@ class App extends React.Component {
                   this.setState((state) => ({ ...state, phase: "Red" }));
                 }}
               >
-                Red
+                100% HP (RED)
               </button>
               <button
                 className="Phase-button"
@@ -95,7 +95,7 @@ class App extends React.Component {
                   this.setState((state) => ({ ...state, phase: "Pink" }));
                 }}
               >
-                Pink 30%
+                60% HP (PINK)
               </button>
               <button
                 className="Phase-button"
@@ -103,7 +103,7 @@ class App extends React.Component {
                   this.setState((state) => ({ ...state, phase: "Yellow" }));
                 }}
               >
-                Yellow 20%
+                30% HP (YELLOW)
               </button>
             </div>
             <div id="FMA-button-list">
@@ -116,13 +116,22 @@ class App extends React.Component {
                 <button
                   className="change-time-button"
                   onClick={() => {
-                    let newTime =
-                      parseInt(document.getElementById("minute-input").value) *
-                        60 +
-                      parseInt(document.getElementById("second-input").value);
+                    if (
+                      parseInt(document.getElementById("minute-input").value) >=
+                        0 &&
+                      parseInt(document.getElementById("second-input").value) >=
+                        0
+                    ) {
+                      let newTime =
+                        parseInt(
+                          document.getElementById("minute-input").value
+                        ) *
+                          60 +
+                        parseInt(document.getElementById("second-input").value);
+                      this.setState((state) => ({ ...state, timer: newTime }));
+                    }
                     document.getElementById("minute-input").value = "";
                     document.getElementById("second-input").value = "";
-                    this.setState((state) => ({ ...state, timer: newTime }));
                   }}
                 >
                   Change Time

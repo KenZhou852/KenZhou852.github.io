@@ -16,7 +16,7 @@ body {
   margin-right: auto;
   width: 60%;
   min-height: 100vh;
-  background: rgba(102, 139, 99, 0.3);
+  background: rgba(102, 139, 99, 0.9);
   border-radius: 30px;
   min-width: 50rem;
 }
